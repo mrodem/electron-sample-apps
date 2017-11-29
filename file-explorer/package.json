@@ -1,5 +1,10 @@
 {
-  "name"    : "file-explorer-demo",
-  "version" : "1.1.0",
-  "main"    : "main.js"
+  "name": "file-explorer-demo",
+  "version": "1.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "1.6.7",
+    "jade": "^1.11.0",
+    "spectron": "3.6.4"
+  }
 }
