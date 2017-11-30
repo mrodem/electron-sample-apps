@@ -8,8 +8,7 @@ const app = new Application({
 });
 
 app.start()
-    .then(() => app.client.waitUntilWindowLoaded())
-    .then(() => app.client.windowByIndex(0).browserWindow.getTitle())
+    .then(() => app.browserWindow.getTitle())
     .then(title => {
         console.log(title);
         return app.stop();

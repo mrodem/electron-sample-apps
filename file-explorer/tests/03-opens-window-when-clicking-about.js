@@ -8,7 +8,6 @@ const app = new Application({
 });
 
 app.start()
-    .then(() => app.client.waitUntilWindowLoaded())
     .then(() => app.client.windowByIndex(0).click('a=About'))
     .then(() => app.client.waitUntilWindowLoaded())
     .then(() => app.client.windowByIndex(1).browserWindow.getTitle())

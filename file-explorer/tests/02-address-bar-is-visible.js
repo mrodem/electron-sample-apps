@@ -8,8 +8,7 @@ const app = new Application({
 });
 
 app.start()
-    .then(() => app.client.waitUntilWindowLoaded())
-    .then(() => app.client.windowByIndex(0).isVisible('#sidebar'))
+    .then(() => app.browserWindow.isVisible('#sidebar'))
     .then(isVisible => {
         console.log(isVisible);
         return app.stop();
